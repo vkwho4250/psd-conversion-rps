@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
+
+      <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+      <link
+         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+
+   <body>
+      <div class="background"></div>
+
+      <!-- Rules -->
+
+      <div id="rule-container" class="hide">
+         <div class="rule-pop-up">
+            <div class="flex-container">
+               <div>
+                  <h2>Rules</h2>
+               </div>
+
+               <div id="close-icon">
+                  <img src="images/icon-close.svg" />
+               </div>
+            </div>
+            <div class="image">
+               <img src="images/image-rules.svg" />
+            </div>
+         </div>
+      </div>
+
+      <!-- Title and Scoreboard -->
+
+      <div id="content-container">
+         <div class="title-bar">
+            <div>
+               <img class="logo" src="images/logo.svg" />
+            </div>
+            <div class="scoreboard">
+               <p>Score</p>
+               <h1 id="score">0</h1>
+            </div>
+         </div>
+
+         <!-- CENTER SECTION -->
+         <div class="center-section">
+            <!-- START: Player Turn Page -->
+            <div id="player-page" class="center-page grid-container">
+               <img class="triangle" src="images/bg-triangle.svg" />
+
+               <div class="triangle-buttons">
+                  <!-- START: Top half -->
+                  <div>
+                     <!-- Paper -->
+                     <div id="paper" class="action paper">
+                        <div class="action-inner">
+                           <img src="images/icon-paper.svg" />
+                        </div>
+                     </div>
+                     <!-- Scissors -->
+                     <div id="scissors" class="action scissors">
+                        <div class="action-inner">
+                           <img src="images/icon-scissors.svg" />
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END: Top half -->
+
+                  <!-- START: Bottom Half -->
+                  <div id="rock" class="action rock">
+                     <div class="action-inner">
+                        <img src="images/icon-rock.svg" />
+                     </div>
+                  </div>
+                  <!-- END: Bottom Half -->
+               </div>
+            </div>
+            <!-- END: Player Turn Page -->
+
+            <!--START: Picked Results Page -->
+
+            <div id="picked-page" class="center-page hide">
+               <!-- Text Display -->
+
+               <div class="grid-container">
+                  <!-- 1 -->
+                  <div class="display-column">
+                     <div class="player-label">
+                        <h3>You Picked</h3>
+                     </div>
+
+                     <!-- START: Player Display Result -->
+                     <div id="player-display" class="display-box">
+                        <!-- Gradient Circle -->
+                        <div id="player-win" class="gradient-circle hide">
+                           <div class="gradient-circle second">
+                              <div class="gradient-circle third"></div>
+                           </div>
+                        </div>
+
+                        <!-- Dark Circle -->
+                        <div class="action">
+                           <div class="action-inner dark-circle"></div>
+                        </div>
+
+                        <!-- Paper Display -->
+                        <div class="action paper hide">
+                           <div class="action-inner">
+                              <img src="images/icon-paper.svg" />
+                           </div>
+                        </div>
+                        <!-- Scissors Display -->
+                        <div class="action scissors hide">
+                           <div class="action-inner">
+                              <img src="images/icon-scissors.svg" />
+                           </div>
+                        </div>
+                        <!-- Rock Display -->
+                        <div class="action rock hide">
+                           <div class="action-inner">
+                              <img src="images/icon-rock.svg" />
+                           </div>
+                        </div>
+                     </div>
+                     <!-- END: Player Display Result -->
+                  </div>
+
+                  <!-- 2 -->
+
+                  <div id="result-text-display" class="hide">
+                     <h1>You Lose</h1>
+                     <button id="play-again" class="btn" type="button">
+                        Play Again
+                     </button>
+                  </div>
+
+                  <div class="display-column">
+                     <div class="computer-label">
+                        <h3>The House Picked</h3>
+                     </div>
+                     <!-- Computer Display Result -->
+                     <div id="computer-display" class="display-box">
+                        <!-- Gradient Circle -->
+                        <div id="computer-win" class="gradient-circle hide">
+                           <div class="gradient-circle second">
+                              <div class="gradient-circle third"></div>
+                           </div>
+                        </div>
+
+                        <!-- Dark Circle -->
+                        <div id="player-point" class="action">
+                           <div class="action-inner dark-circle"></div>
+                        </div>
+
+                        <!-- Paper Display -->
+                        <div class="action paper hide">
+                           <div class="action-inner">
+                              <img src="images/icon-paper.svg" />
+                           </div>
+                        </div>
+                        <!-- Scissors Display -->
+                        <div class="action scissors hide">
+                           <div class="action-inner">
+                              <img src="images/icon-scissors.svg" />
+                           </div>
+                        </div>
+                        <!-- Rock Display -->
+                        <div class="action rock hide">
+                           <div class="action-inner">
+                              <img src="images/icon-rock.svg" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer">
+            <button id="rule-btn" class="btn" type="button">Rules</button>
+         </div>
+      </div>
+
+      <div class="attribution">
+         Challenge by
+         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+         >. Coded by <a href="#">Victoria Ho</a>.
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="app.js" charset="utf-8"></script>
+   </body>
+</html>
