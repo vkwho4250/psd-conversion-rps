@@ -1,9 +1,12 @@
 # My Comments
 
+A simple game of rock, paper scissors.
+
+[Live Site](https://reverent-ardinghelli-00c0c6.netlify.app])
+
 ### The purpose of this project is to learn and gain practice with:
 
--  jQuery framework
--  HTML, CSS, JavaScript
+-  jQuery
 -  PSD Conversion
 -  Responsive Design
 
