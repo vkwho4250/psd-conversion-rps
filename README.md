@@ -2,8 +2,7 @@
 
 ### The purpose of this project is to learn and gain practice with:
 
--  jQuery framework
--  HTML, CSS, JavaScript
+-  jQuery
 -  PSD Conversion
 -  Responsive Design
 
