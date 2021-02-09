@@ -47,9 +47,7 @@
 
       <div id="content-container">
          <div class="title-bar">
-            <div>
-               <img class="logo" src="images/logo.svg" />
-            </div>
+            <img class="logo" src="images/logo.svg" />
             <div class="scoreboard">
                <p>Score</p>
                <h1 id="score">0</h1>
@@ -64,7 +62,7 @@
 
                <div class="triangle-buttons">
                   <!-- START: Top half -->
-                  <div>
+                  <div class="btn-container">
                      <!-- Paper -->
                      <div id="paper" class="action paper">
                         <div class="action-inner">
@@ -81,11 +79,14 @@
                   <!-- END: Top half -->
 
                   <!-- START: Bottom Half -->
-                  <div id="rock" class="action rock">
-                     <div class="action-inner">
-                        <img src="images/icon-rock.svg" />
+                  <div class="btn-container flex-container">
+                     <div id="rock" class="action rock">
+                        <div class="action-inner">
+                           <img src="images/icon-rock.svg" />
+                        </div>
                      </div>
                   </div>
+
                   <!-- END: Bottom Half -->
                </div>
             </div>
@@ -190,17 +191,19 @@
             </div>
          </div>
 
-         <div class="footer">
+         <div class="footer flex-container">
+            <div class="attribution">
+               Challenge by
+               <a
+                  href="https://www.frontendmentor.io?ref=challenge"
+                  target="_blank"
+                  >Frontend Mentor</a
+               >. Coded by <a href="#">Victoria Ho</a>.
+            </div>
             <button id="rule-btn" class="btn" type="button">Rules</button>
          </div>
       </div>
 
-      <div class="attribution">
-         Challenge by
-         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-         >. Coded by <a href="#">Victoria Ho</a>.
-      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="app.js" charset="utf-8"></script>
    </body>
