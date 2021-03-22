@@ -2,7 +2,7 @@
 
 A simple game of rock, paper scissors.
 
-[Live Site](https://reverent-ardinghelli-00c0c6.netlify.app)
+[Live Site](https://rock-paper-scissors-vkwho.netlify.app)
 
 ### The purpose of this project is to learn and gain practice with:
 
