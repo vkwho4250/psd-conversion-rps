@@ -1,6 +1,6 @@
 # My Comments
 
-A simple game of rock, paper scissors.
+The classic game of rock, paper scissors.
 
 [Live Site](https://rock-paper-scissors-vkwho.netlify.app)
 
